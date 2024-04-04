@@ -1,0 +1,6 @@
+apiVersion: v2
+name: route53-dynamic-dns
+description: Update AWS Route53 when dynamic public IP changes
+type: application
+version: 1.0.0
+appVersion: "aws-cli-v2"

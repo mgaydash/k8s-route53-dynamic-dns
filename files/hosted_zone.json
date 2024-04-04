@@ -1,0 +1,18 @@
+{
+  "Comment": "Update record to reflect new IP",
+  "Changes": [
+      {
+          "Action": "UPSERT",
+          "ResourceRecordSet": {
+              "Name": "{{ .Values.record_set.name }}",
+              "Type": "{{ .Values.record_set.type }}",
+              "TTL": {{ .Values.record_set.ttl }},
+              "ResourceRecords": [
+                  {
+                      "Value": "@@@"
+                  }
+              ]
+          }
+      }
+  ]
+}

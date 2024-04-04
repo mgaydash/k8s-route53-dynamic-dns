@@ -1,0 +1,13 @@
+aws_access_key_id: REPLACE_ME
+aws_secret_access_key: REPLACE_ME
+hosted_zone_id: REPLACE_ME
+record_set:
+  name: "*.k8s.mgaydash.com"
+  type: "A"
+  ttl: 300
+
+replicaCount: 1
+image:
+  repository: bitnami/aws-cli
+  pullPolicy: IfNotPresent
+  tag: latest
